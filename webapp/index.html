@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>sap.training.modularization</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"sap.training.modularization": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script>
+		var oButton = new sap.m.Button({text: "Drück mich"});
+		
+		oButton.attachPress(function() {
+        	sap.ui.require(["sap/training/modularization/myLib/MessageManager"],
+        		function(MessageManager) {
+            		MessageManager.reportSuccess("der Button wurde gedrückt.", "erfolg");
+    			});
+		});
+	
+		oButton.placeAt("content");
+	</script>
+		
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
