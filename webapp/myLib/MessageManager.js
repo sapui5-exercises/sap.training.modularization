@@ -1,5 +1,5 @@
 sap.ui.define(["sap/m/MessageBox",
-			   "sap/training/modularization/myLib/Formatter"],
+			   "sap/training/myLib/Formatter"],
 	function(MessageBox, Formatter) {
 		return {
 			reportSuccess: function(sMsg, sTitle) {
@@ -10,6 +10,3 @@ sap.ui.define(["sap/m/MessageBox",
 			}
 		};
 	});
-	
-	
-	
